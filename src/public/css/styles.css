@@ -1,0 +1,25 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0;
+
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-container {
+  margin: 20px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}

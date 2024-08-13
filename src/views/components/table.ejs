@@ -1,0 +1,38 @@
+<div class="table-responsive" style="height: 400px; overflow-y: auto">
+  <table class="table table-striped" id="main-table">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Id</th>
+        <th scope="col">title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Creation date</th>
+
+        <th scope="col">Operations</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% tasks.forEach(function(task) { %>
+      <tr>
+        <td>
+          <input type="checkbox" class="select-task" value="<%= task.id %>" />
+        </td>
+        <th scope="row"><%= task.id %></th>
+        <td><%= task.title %></td>
+        <td><%= task.description %></td>
+        <td><%= task.creationDate %></td>
+
+        <td>
+          <button
+            type="button"
+            class="btn btn-success mark-done"
+            data-id="<%= task.id %>"
+          >
+            &#10004;
+          </button>
+        </td>
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</div>
